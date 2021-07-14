@@ -185,7 +185,6 @@ footer{
     width: 483px;
     margin: 0 auto;   
 }
-
 .footer-items{
     border-radius: 0px;
     justify-content: center;
@@ -217,20 +216,18 @@ footer{
 }
 
 
-/*CSS For PC End*/
+/*--------------------CSS For PC End--------------*/
 
 
 
 
 
 
-/*media quary*/
-/*mobile */
+/*------------------jquary---------------------*/
+/*------------------mobile----------------------*/
 @media only screen and (max-width:600px){
 
-   
-    
-    /*1st page*/
+   /*1st page*/
     nav a{
         display: inline-block;
         padding: 7px 18px 7px 18px;
@@ -253,7 +250,7 @@ footer{
     }
     .main-text h2{
         font-size: 36px;
-        font-style: normal;
+        
         line-height: 50px;
         text-align: left;
     }
@@ -264,7 +261,7 @@ footer{
         line-height: 24px;
         text-decoration: none;
         height: 44px;
-        background-color: #E02C6D;
+        
         padding: 10px 24px 10px 24px;
     }
     .main-text a i{
@@ -360,6 +357,10 @@ footer{
     .cup p{
         font-size: 15px;
     }
+    .fourth-full-page:hover .cup p{
+        transition:2s;
+        transform: rotatex(360deg);
+    }
     .cup-number{
         font-size: 70px;
         color:  white;
@@ -411,14 +412,11 @@ footer{
 
 
 
-/*tablat*/
+/*----------------tablat--------------*/
 @media only screen and (min-width: 600px) and (max-width:992px) {
-
-
 
 /*first page*/
 .first-page{
-    
     padding-top: 153px;
     height: 895px;
 }
@@ -464,22 +462,22 @@ footer{
     font-size: 40px;
     margin: 0;
     font-weight: bold;
-    text-align: center;
-    
-    
+    text-align: center;   
 }
 .cups{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
 .cup{
-    text-align: center;
-    
+    text-align: center;   
 }
 .cup p{
     color: white;
-   
-    font-size: 25px;
+   font-size: 25px;
+}
+.fourth-full-page:hover .cup p{
+    transition:2s;
+    transform: rotatex(360deg);
 }
 .cup-number{
     font-size: 70px;
