@@ -171,6 +171,10 @@ nav a i{
     font-weight: bolder;
     text-shadow: 0px 3px 20px #0080ff;
 }
+.fourth-full-page:hover .cup p{
+    transition:2s;
+    transform: rotatex(360deg);
+}
 /*footer*/
 footer{
     justify-content: center;
@@ -194,7 +198,6 @@ footer{
     font-size: 30px;
     width: 32px;
     color: #969BAB;
-    
     border-radius: 50%;
     justify-content: center;
     align-items: center;
@@ -363,6 +366,7 @@ footer{
         font-weight: bolder;
         text-shadow: 0px 3px 20px #0080ff;
     }
+    
     /*footer*/
     footer{
         justify-content: center;
