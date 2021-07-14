@@ -14,11 +14,15 @@ nav a{
     margin: 42px 124px 0px 0px;
     text-decoration: none;
 }
+nav a:hover{
+    background-color: #f0075c;
+    transition: 1s;
+}
 nav a i{
     margin-right: 12px;
 }
 .first-page{
-    background-color: rgb(27, 27, 248);
+    background-color: #044383;
     padding-top: 153px;
     height: 695px;
 }
@@ -48,12 +52,20 @@ nav a i{
     background-color: #E02C6D;
     padding: 10px 24px 10px 24px;
 }
+.main-text a:hover{
+    background-color: #f0075c;
+    transition: 1s;
+}
 .main-text a i{
     margin-left: 8px;
 }
 .banner img{
     width: 556.01px;
     height: 438px;
+}
+.first-page:hover .banner img{
+    transition:2s;
+    transform: rotatey(360deg);
 }
 /*secod-page*/
 .second-full-page{
@@ -71,6 +83,11 @@ nav a i{
     height: 474px;
     width: 300px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    transition: 1.5s;
+}
+.card:hover{
+    box-shadow: 0px 0px 10px #044383;
+    transition: 1.5s;
 }
 .card img{
     height: 256px;
@@ -113,12 +130,46 @@ nav a i{
     justify-content: center;
     padding: 10px 24px 10px 24px;
 }
+.third-page-text a:hover{
+    background-color: #f0075c;
+    transition: 1s;
+}
 .third-page-text a i{
     margin-left: 10px;
 }
-.match img{
+.match iframe{
     height: 427px;
     width: 567px;
+}
+/*fourth page*/
+.fourth-full-page{
+    height: 300px;
+    background-color: black;
+    margin-top: 90px;
+}
+.text{
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;   
+}
+.cups{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.cup{
+    text-align: center;   
+}
+.cup p{
+    color: white;
+   font-size: 25px;
+}
+.cup-number{
+    font-size: 70px;
+    color:  white;
+    font-weight: bolder;
+    text-shadow: 0px 3px 20px #0080ff;
 }
 /*footer*/
 footer{
@@ -140,16 +191,20 @@ footer{
     width: 483px;  
 }
 .icons i{
-    height: 32px;
-    padding: 15px;
+    font-size: 30px;
     width: 32px;
     color: #969BAB;
-    background-color: #E7E7E5;
+    
     border-radius: 50%;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 10px;
+}
+.icons i:hover{
+    color: #044383;
+    transition:2s;
+    transform: rotatey(360deg);
 }
 
 .footer-items p{
@@ -168,7 +223,7 @@ footer{
 
 /*media quary*/
 /*mobile */
-@media only screen and (max-width:688px){
+@media only screen and (max-width:600px){
 
    
     
@@ -176,16 +231,12 @@ footer{
     nav a{
         display: inline-block;
         padding: 7px 18px 7px 18px;
-        background-color: #E02C6D;
-        color: white;
         justify-content:right;
         float: right;
         margin: 33px 21px 0px 0px;
-        text-decoration: none;
     }
    
     .first-page{
-        background-color: rgb(27, 27, 248);
         padding-top: 153px;
         height: 640px;
     }
@@ -198,12 +249,9 @@ footer{
         margin-left: 18px;
     }
     .main-text h2{
-        font-family: Poppins;
         font-size: 36px;
         font-style: normal;
-        font-weight: 700;
         line-height: 50px;
-        color: white;
         text-align: left;
     }
     .main-text a{
@@ -286,9 +334,34 @@ footer{
     .third-page-text a i{
         margin-left: 10px;
     }
-    .match img{
+    .match iframe{
         height: 248px;
         width: 328px;
+    }
+        /*fourth page*/
+    .fourth-full-page{
+        height: 800px;
+        background-color: black;
+        margin-top: 90px;
+    }
+    .text{
+        font-size: 30px;    
+    }
+    .cups{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .cup{
+        text-align: center;   
+    }
+    .cup p{
+        font-size: 15px;
+    }
+    .cup-number{
+        font-size: 70px;
+        color:  white;
+        font-weight: bolder;
+        text-shadow: 0px 3px 20px #0080ff;
     }
     /*footer*/
     footer{
@@ -304,19 +377,16 @@ footer{
     .footer-items{
         border-radius: 0px;
         justify-content: center;
-        margin-top: 168px;
+        margin-top: 68px;
     }
     .footer-items img{
-        width: 275px;  
+        width: 250px;  
         margin-right: 0px;
     }
     .icons i{
         height: 32px;
         padding: 15px;
         width: 32px;
-        color: #969BAB;
-        background-color: #E7E7E5;
-        border-radius: 50%;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -340,4 +410,78 @@ footer{
 /*tablat*/
 @media only screen and (min-width: 600px) and (max-width:992px) {
 
+
+
+/*first page*/
+.first-page{
+    
+    padding-top: 153px;
+    height: 895px;
+}
+.banner-and-text{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 40px;
+}
+.banner img{
+    width: 556.01px;
+    height: 438px;
+    margin-left: 200px;
+}
+/*secod-page*/
+.second-full-page{
+    margin: 60px 180px 165px 180px;    
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+/*third-page*/
+.full-third-page{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin: 0px 56px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+.match iframe{
+    height: 300px;
+    width: 400px;
+}
+/*fourth page*/
+.fourth-full-page{
+    height: 550px;
+    background-color: black;
+    margin-top: 90px;
+}
+.text{
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    
+    
+}
+.cups{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.cup{
+    text-align: center;
+    
+}
+.cup p{
+    color: white;
+   
+    font-size: 25px;
+}
+.cup-number{
+    font-size: 70px;
+    color:  white;
+    font-weight: bolder;
+    text-shadow: 0px 3px 20px #0080ff;
+}
+    
 }
